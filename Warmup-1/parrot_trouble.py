@@ -18,6 +18,11 @@ def parrot_trouble(talking, hour):
     else:
         return False
     
+# Alternate solution
+def parrot_trouble(talking, hour):
+    return (talking and (hour < 7 or hour > 20))
+
+
 # Use cases
     
 usecase_1 = parrot_trouble(True, 6)
@@ -27,4 +32,5 @@ usecase_3 = parrot_trouble(False, 6)
 # Printing 
 
 print(usecase_1, usecase_2, usecase_3)
+
 
